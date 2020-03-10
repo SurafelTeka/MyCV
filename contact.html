@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
@@ -14,7 +15,9 @@
     <hr>
     
 <a href="index.html" >Home</a> |
+<a href="gallery.html">Gallery</a>|
 <a href="contact.html">Contact</a>
+
     <hr>
 
     
@@ -32,21 +35,26 @@
    
 <hr>
 <!-- contact form  -->
-<h3>Leave your comment here</h3>
+<table cell spacing="30" align="center">
+    <tr>
+        <td><h2>Leave your comment here</h2></td>
+    </tr>
+</table>
+
 <table cellspacing="50">
 <form  action="/action_page.php" method="POST" action="mailto:se.surafel.teka@gmail.com" enctype="UTF-8">
     <tr>
-  <td><label for="fName">First Name</label></td>
-
-   <td> <input type="text" name="fName" id="fName" pattern="[A-Za-z]{0-23}" title="only chars">
-  </td>  
+       <td> <label for="FNAME">First Name</label><br>
+       </td> <td> <input  type="text"  
+        pattern="[a-z]{4,8}" title="4 to 15 letters" name="username" id="FNAME" required></td>
+ 
     
 </tr>
     
 <br>
 <tr>
     <td><label for="lName">Last Name</label></td>
-       <td><input type="text" name="lName" id="lName" pattern="[A-Za-z]{15}"></td> 
+       <td><input type="text" name="lastName" id="lName" pattern="[A-Za-z]{4,15}" title="4 to 15 letters" required></td> 
 </tr>
     
     <br>
@@ -55,34 +63,47 @@
            <td><input type="email" name="email" id="email"></td> 
     </tr>
     
+    <tr>
+        <td><select name="country" id="">
+            <option value="AS">Asia</option>
+            <option value="AF">Africa</option>
+        </select></td>
 
+</tr>
     
-    
+<tr><td><label for="myDate">When are you available this summer?</label></td>
+    <td> <input type="date" name="myDate" min="2013-06-01" max="2013-08-31" step="3600" id="myDate">
+
+      </td>
+      
+      </tr> 
+      <tr>
+        
+        <td><label for="telo">Your tel in the format (251)938-056-296</label></td>
+             <td><input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="251" size="3" id="telo"/>-
+              <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="000"  size="2" id="telo"/>- 
+              <input name="tel3" type="tel" pattern="[0-9]{3}" placeholder="000"  size="3" id="telo"/>
+              <input name="tel3" type="tel" pattern="[0-9]{3}" placeholder="000"  size="3" id="telo"/></td>
+            
+           
+      </tr>   
 
     
 
 <tr><td><label for="detail">What do you say</label></td>
     <td><textarea name="detail" id="detail" cols="30" rows="10"></textarea></td></tr>
     
-    
+      
     
     <tr>
         <td><input type="submit" value="send"></td></tr>
 
 
-        <tr>
-            <td></td><select name="country" id="">
-                <option value="AS">Asia</option>
-                <option value="AF">Africa</option>
-            </select></td>
+        
+    
+    
 
-<div>    </tr>
-    <tr><label for="price">Choose a maximum house price: </label>
-        <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
-        <output class="price-output" for="price"></output></tr></div>
-
-        <label for="username">Username <i>(letters and numbers only, no  punctuation or special characters)</i></label><br>
-        <input name="username" id="username">
+        
     </form>
  
 
