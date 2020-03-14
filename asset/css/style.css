@@ -1,84 +1,71 @@
+/* Element selector [Tag] */
 body{
-    background-color: skyblue;
-    border:solid lightgray 10px;
-    margin: 10px ;
+    
+ /*   border: solid 10px lightgray;*/
+ background-image: url(../image/woman-in-brown-sleeveless-dress-standing-on-green-grass-3824154.jpg);
+    background-color:lightgray;
+    margin: 10px;
 
+}
 
-
+#content{
+    background-image: url(../image/two-women-sitting-on-floor-3735505.jpg);
+    background-color: gainsboro;
+    padding: 10px;
+    border: 25px solid lightgray;
+    
 }
 header{
-    margin-bottom: 100px;
-    background-color: rgba(119,90,90,0.2);
-    width: 100%;
-    position: fixed;
-    top: 100px;
-    right: 0;
-    top: 0;
+    background-color: rgba(red,red,red, red);
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
-
+/*    position: fixed;*/
 }
-/* targeting our blog */
 section{
-font-family: Arial, Helvetica, sans-serif;
-padding: 5px 30px;
-
-
+  /*  border: solid 1px;*/
+    padding: 5PX 30PX;
+    font-family: sans-serif;
+    margin-top: 100px ;
 }
 article{
-    font-size: 15px;
+    line-height: 25px;
     text-align: justify;
-    line-height: 15px;
+    font-size: 15px;
 }
+
 .title{
-font-size: 23px;
-font-weight: bold;
+    font-size: 23px;
+    font-weight: bold;
 }
 .date{
-font-style: italic;
-font-size: 15px;
-text-transform: uppercase;
+    text-transform: uppercase;
+    font-style: italics;
+    font-size: 15px;
 }
-/* Navigation */
-nav>ul>li
-{
+/* Changing the block / inline */
+nav > ul > li{
     display: inline-block;
     padding: 10px 3px;
     font-size: 20px;
+
 }
-nav>ul>li>a{
+nav > ul > li > a{
     text-decoration: none;
 }
-nav>ul>li:hover{
-    background-color: rgb(128, 47, 0);
+nav > ul > li:hover {
+    background-color: blue;
 }
-nav ul li:active{
-    background-color: red;
 
-}
-nav ul li:visited{
-background-color: white;
-}
 img{
-    float: left;
-    max-width: 400px;
-    width: 20%;
+    width: 400px;
     height: 400px;
-    border-radius:100%;
-    margin: 0 20px ;
-
+    border-radius: 100%;
+    float: left;
 }
+
 #clear{
-clear: left;
-
+    clear: left;    
 }
-
-
-
-
-
-
-
-
-
-
 
