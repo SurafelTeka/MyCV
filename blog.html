@@ -26,7 +26,12 @@
 <section>
     <p class="title">Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ? </p>
     <article class="">
-<p> </p>
+<p> It is a big deal to use relative size because they help you to achieve a responsive and balanced design.
+    While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.
+    If a style sheet is built in a modular fashion, then rem shouldn’t be needed very often, but it can be handy at times.
+    For example, if you’re trying to achieve consistent spacing without extra markup, rem can be used to define the padding and margins.
+    When we look at em units the big problem here is that they are relative to the font size of their own element.Rem is helpful because of the ability to scale type across the entire page easily.
+    On the other hand the main issue with using rem for font sizing is that the values are somewhat difficult to use which makes them inconvenient for making calculations.</p>
 </article>
 <p class="date">March 13.2002 :10:22AM</p>
 
@@ -36,7 +41,8 @@
     <p class="title">We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ?</p>
     <article class="">
 <p>
-
+    The font size we assume on the root element's font size is 16px and all elements within rem are relative to the root therefore when we change font size to 200px the 
+    browser just interprets this as 12.5 rems which equals to 200px.
 </p>
 </article>
 <p class="date">March 14.2002 :4:38AM</p>
@@ -48,10 +54,32 @@
 <section>
     <p class="title">Explain in detail(in technical terms) the specific changes in css3 </p>
     <article class="">
-<p>
+
+<h4>Selectors</h4>
+        <p> Using the new DOM selectors you can choose DOM elements based on their attributes.
+             So you don't need to specify classes and IDs for every element.
+             Instead, you can make use of the attribute field to style them.
 
     
 </p>
+<h4>Rounded Corners</h4>
+<p> Adjusting the height, width and positioning of rounded corner elements is a time consuming and laborious.Alteration in content can break them.
+    CSS 3 addresses this problem by introducing the border-radius property,
+     which gives you the same rounded-corner effect and you don't have to write all the code.</p>
+
+<h4>Border Image</h4>
+<p>Another feature in CSS 3 is the ability to replace a border with an image. 
+  The property border-image allows you to specify an image to display instead of a plain solid-colored border.</p>
+<h4>Box Shadows</h4>
+<p>This functionality enables a content to slide under another area such as footer.This process doesn't require javascript plugin</p>
+
+<h4>Transform (Element Rotation)</h4>
+
+<p> CSS 3 also introduced a property called transform, which enables rotating Web elements on a webpage.
+    The transform property applies a 2D or 3D transformation to an element. 
+    This property allows you to rotate, scale, move, skew, etc., elements. 
+    Many JavaScript extensions/plugins are available online for this feature,
+  but they can make the code complicated and most importantly consume more resources.</p>
 </article>
 <p class="date">March 15.2002 :8:10AM</p>
 
